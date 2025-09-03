@@ -1,2 +1,2 @@
 # projetoProWay-MVC
-Projeto MVC
+Projeto MVC - Proway
