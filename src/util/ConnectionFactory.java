@@ -11,7 +11,7 @@ public class ConnectionFactory {
     public static Connection getConnection() throws Exception {
         try {
             Class.forName("org.postgresql.Driver");
-            System.out.println("Banco conectado com sucesso.");
+            System.out.println("Conexão realizada com sucesso.");
             return DriverManager.getConnection(PATH,USER,PASSWORD);
         }catch (Exception e){
             throw new Exception("Erro de conecxão com o banco de dados."+e.getMessage());
@@ -45,12 +45,4 @@ public class ConnectionFactory {
             throw new Exception(e.getMessage());
         }
     }
-
-
-
-
-
-
-
-
 }
