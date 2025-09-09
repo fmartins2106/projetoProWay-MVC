@@ -3,18 +3,16 @@ package model;
 public class Produto {
     private Long id;
     private String descricao;
-    private Double preco;
+    private double preco;
     private boolean status;
 
     public Produto() {
 
     }
 
-    public Produto(Long id, String descricao, Double preco, boolean status) {
-        this.id = id;
+    public Produto(String descricao, double preco) {
         this.descricao = descricao;
         this.preco = preco;
-        this.status = status;
     }
 
     public Long getId() {
@@ -33,11 +31,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
